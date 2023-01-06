@@ -1,6 +1,15 @@
 {
   "expo": {
     "scheme": "acme",
-    "web": { "bundler": "metro" }
+    "web": { "bundler": "metro" },
+    "android": {
+      "permissions": ["READ_CALENDAR", "WRITE_CALENDAR"]
+    },
+    "ios": {
+      "infoPlist": {
+        "NSRemindersUsageDescription": "This app needs access to your reminders to set reminders.",
+        "NSCalendarsUsageDescription": "This app needs access to your calendar to set reminders."
+      }
+    }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "max-len": ["error", { "code": 120, "ignoreUrls": true, "tabWidth": 2 }],
+    "prefer-const": "off",
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-vars": "error"
+  }
+}
