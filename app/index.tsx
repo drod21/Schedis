@@ -12,10 +12,10 @@ export default function Home() {
     const askPermission = async () => {
       const permission = await getPermission();
       console.log('permission', permission);
-      setGranted(permission);
+      setGranted(permission != null);
     };
     askPermission();
-  });
+  }, []);
 
   const createCalAndEvent = async () => {
     if (granted) {
